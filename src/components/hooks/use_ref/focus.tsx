@@ -1,7 +1,6 @@
-import { useRef } from 'react';
+import { useRef } from "react";
 
 export const Focus: React.FC = () => {
-
   const inputRef = useRef<HTMLInputElement>(null);
 
   const handleClick = () => {
@@ -10,8 +9,8 @@ export const Focus: React.FC = () => {
 
   return (
     <div>
-      <input type="text" />
+      <input type="text" ref={inputRef} />{" "}
       <button onClick={handleClick}>Focus Input</button>
     </div>
   );
-}
+};
